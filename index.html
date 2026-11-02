@@ -7,6 +7,10 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="author" content="ING. KEVIN PAUL AIMITUMA GARCIA">
 <meta name="description" content="BIM ACS Consultores: diseño y construcción con metodología BIM en Huancavelica, Huancayo, Ayacucho y Pampas.">
+<meta property="og:title" content="BIM ACS Consultores">
+<meta property="og:description" content="BIM ACS Consultores: diseño y construcción con metodología BIM en Huancavelica, Huancayo, Ayacucho y Pampas.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://keffttg.github.io/bimacsconsultores/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -323,6 +327,12 @@ h3 { font-size: 1.2rem; }
 .verso { margin: 0; font-style: italic; line-height: 1.5; color: var(--night-fg); }
 .verso cite { display: block; font-style: normal; font-family: var(--font-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); margin-bottom: 4px; }
 @media (max-width: 720px) { .foot-r { justify-items: start; text-align: left; } }
+
+/* Ocultamiento garantizado de cursos por categoría y transición suave */
+.crow[hidden], .crow.hidden { display: none !important; }
+.crow { transition: transform .15s ease, box-shadow .15s ease; }
+.crow:hover { transform: translateX(3px); }
+.facts dd { transition: opacity .15s ease; }
 </style>
 
 </head>
@@ -434,97 +444,97 @@ h3 { font-size: 1.2rem; }
         <span class="csw"><span class="sw">IA</span><span class="sw">BIM</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20AutoCAD%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20AutoCAD%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
         <span class="ctype">Curso · US$ 150</span>
         <span class="ctitle">AutoCAD desde cero + IA</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-autocad" role="img" aria-label="Autodesk AutoCAD"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-c" data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Revit%20y%20Navisworks%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
+      <a class="crow s-c hidden" hidden data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Revit%20y%20Navisworks%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
         <span class="ctype">Curso · US$ 150</span>
         <span class="ctitle">Revit y Navisworks desde cero + IA</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span><span class="sw"><i class="lgo lgo-navisworks" role="img" aria-label="Navisworks"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-a" data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Civil%203D%20e%20InfraWorks%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
+      <a class="crow s-a hidden" hidden data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Civil%203D%20e%20InfraWorks%20desde%20cero%20%2B%20IA" target="_blank" rel="noopener">
         <span class="ctype">Curso · US$ 150</span>
         <span class="ctitle">Civil 3D e InfraWorks desde cero + IA</span>
         <span class="csw"><span class="sw"><img src="logos/civil3d.png" alt="" height="18" onerror="this.remove()">Civil 3D</span><span class="sw"><i class="lgo lgo-infraworks" role="img" aria-label="InfraWorks"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Gesti%C3%B3n%20de%20proyectos%20BIM%20con%20Autodesk%20Forma%20y%20Revizto" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="cursos" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Gesti%C3%B3n%20de%20proyectos%20BIM%20con%20Autodesk%20Forma%20y%20Revizto" target="_blank" rel="noopener">
         <span class="ctype">Curso · US$ 150</span>
         <span class="ctitle">Gestión de proyectos BIM con Autodesk Forma y Revizto</span>
         <span class="csw"><span class="sw"><img src="logos/forma.png" alt="" height="18" onerror="this.remove()">Forma</span><span class="sw"><img src="logos/revizto.png" alt="" height="18" onerror="this.remove()">Revizto</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-c" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20al%20modelado%20y%20gesti%C3%B3n%20de%20edificaciones" target="_blank" rel="noopener">
+      <a class="crow s-c hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20al%20modelado%20y%20gesti%C3%B3n%20de%20edificaciones" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">BIM aplicado al modelado y gestión de edificaciones</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-a" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20metrados%2C%20presupuestos%20y%20planificaci%C3%B3n%20en%20edificaciones" target="_blank" rel="noopener">
+      <a class="crow s-a hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20metrados%2C%20presupuestos%20y%20planificaci%C3%B3n%20en%20edificaciones" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">BIM aplicado a metrados, presupuestos y planificación en edificaciones</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span><span class="sw"><img src="logos/excel.png" alt="" height="18" onerror="this.remove()">Excel</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20coordinaci%C3%B3n%2C%20gesti%C3%B3n%20y%20supervisi%C3%B3n%20de%20edificaciones" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20coordinaci%C3%B3n%2C%20gesti%C3%B3n%20y%20supervisi%C3%B3n%20de%20edificaciones" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">BIM aplicado a coordinación, gestión y supervisión de edificaciones</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-navisworks" role="img" aria-label="Navisworks"></i></span><span class="sw"><img src="logos/revizto.png" alt="" height="18" onerror="this.remove()">Revizto</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-c" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20planeamiento%2C%20seguimiento%20y%20control%20de%20edificaciones" target="_blank" rel="noopener">
+      <a class="crow s-c hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20planeamiento%2C%20seguimiento%20y%20control%20de%20edificaciones" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">BIM aplicado a planeamiento, seguimiento y control de edificaciones</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-navisworks" role="img" aria-label="Navisworks"></i></span><span class="sw">4D</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-a" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Modelado%20y%20coordinaci%C3%B3n%20BIM%20%2B%20IA%20aplicada%20en%20edificaciones" target="_blank" rel="noopener">
+      <a class="crow s-a hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Modelado%20y%20coordinaci%C3%B3n%20BIM%20%2B%20IA%20aplicada%20en%20edificaciones" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">Modelado y coordinación BIM + IA aplicada en edificaciones</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span><span class="sw"><i class="lgo lgo-navisworks" role="img" aria-label="Navisworks"></i></span><span class="sw">IA</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Revisi%C3%B3n%20avanzada%20t%C3%A9cnica%20de%20expedientes%20t%C3%A9cnicos%20con%20IA%20generativa" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="espec" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Revisi%C3%B3n%20avanzada%20t%C3%A9cnica%20de%20expedientes%20t%C3%A9cnicos%20con%20IA%20generativa" target="_blank" rel="noopener">
         <span class="ctype">Especialización · US$ 300</span>
         <span class="ctitle">Revisión avanzada técnica de expedientes técnicos con IA generativa</span>
         <span class="csw"><span class="sw">IA generativa</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-c" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20infraestructura%20educativa" target="_blank" rel="noopener">
+      <a class="crow s-c hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20infraestructura%20educativa" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">BIM aplicado a infraestructura educativa</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-a" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20infraestructura%20hospitalaria" target="_blank" rel="noopener">
+      <a class="crow s-a hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%20aplicado%20a%20infraestructura%20hospitalaria" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">BIM aplicado a infraestructura hospitalaria</span>
         <span class="csw"><span class="sw"><i class="lgo lgo-revit" role="img" aria-label="Revit"></i></span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%2C%20GIS%2C%20automatizaci%C3%B3n%20e%20IA%20en%20infraestructura%20vial" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%2C%20GIS%2C%20automatizaci%C3%B3n%20e%20IA%20en%20infraestructura%20vial" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">BIM, GIS, automatización e IA en infraestructura vial</span>
         <span class="csw"><span class="sw"><img src="logos/civil3d.png" alt="" height="18" onerror="this.remove()">Civil 3D</span><span class="sw">GIS</span><span class="sw">IA</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-c" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%2C%20GIS%20y%20automatizaci%C3%B3n%20en%20infraestructura%20hidr%C3%A1ulica" target="_blank" rel="noopener">
+      <a class="crow s-c hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20BIM%2C%20GIS%20y%20automatizaci%C3%B3n%20en%20infraestructura%20hidr%C3%A1ulica" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">BIM, GIS y automatización en infraestructura hidráulica</span>
         <span class="csw"><span class="sw">GIS</span><span class="sw">BIM</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-a" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Inteligencia%20artificial%20aplicada%20a%20la%20ingenier%C3%ADa%20y%20construcci%C3%B3n" target="_blank" rel="noopener">
+      <a class="crow s-a hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Inteligencia%20artificial%20aplicada%20a%20la%20ingenier%C3%ADa%20y%20construcci%C3%B3n" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">Inteligencia artificial aplicada a la ingeniería y construcción</span>
         <span class="csw"><span class="sw">IA</span></span>
         <span class="cgo">Consultar</span>
       </a>
-      <a class="crow s-b" data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Gesti%C3%B3n%20de%20proyectos%20con%20enfoque%20PMI%2C%20marcos%20colaborativos%20VDC%2C%20IPD%2C%20BIM%20e%20inteligencia%20artificial" target="_blank" rel="noopener">
+      <a class="crow s-b hidden" hidden data-cat="dipl" href="https://wa.me/51978554228?text=Hola%2C%20deseo%20informaci%C3%B3n%20de%3A%20Gesti%C3%B3n%20de%20proyectos%20con%20enfoque%20PMI%2C%20marcos%20colaborativos%20VDC%2C%20IPD%2C%20BIM%20e%20inteligencia%20artificial" target="_blank" rel="noopener">
         <span class="ctype">Diplomado · US$ 300</span>
         <span class="ctitle">Gestión de proyectos con enfoque PMI, marcos colaborativos VDC, IPD, BIM e inteligencia artificial</span>
         <span class="csw"><span class="sw">PMI</span><span class="sw">VDC</span><span class="sw">IPD</span><span class="sw">BIM</span></span>
@@ -711,7 +721,11 @@ document.querySelectorAll('.copy-btn').forEach(function (b) {
   function show(k) {
     info(k);
     tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.tab === k)); });
-    rows.forEach(function (r) { r.hidden = r.dataset.cat !== k; });
+    rows.forEach(function (r) {
+      var hide = r.dataset.cat !== k;
+      r.hidden = hide;
+      r.classList.toggle('hidden', hide);
+    });
   }
   tabs.forEach(function (t) { t.addEventListener('click', function () { show(t.dataset.tab); }); });
   if (tabs.length) show(tabs[0].dataset.tab);
